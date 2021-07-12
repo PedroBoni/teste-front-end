@@ -1,0 +1,50 @@
+.formControll {
+  position: relative;
+  padding-top: 1rem;
+}
+
+.formControll + div {
+  margin-top: 0.5rem;
+}
+
+.formControll input {
+  border: 0;
+  border-bottom: 1.5px solid #333333;
+  width: 100%;
+  padding-bottom: 0.3rem;
+  height: 1rem;
+  outline: none;
+  transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+.formControll input:focus {
+  border-bottom: 1.5px solid #333333;
+}
+
+.formControll input::placeholder {
+  color: transparent;
+}
+
+.formControll label {
+  pointer-events: none;
+  color: #dcdcdc;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 0.7rem;
+  transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+}
+
+.formControll input:focus + label,
+.formControll input:not(:placeholder-shown) + label {
+  font-size: 0.75rem;
+  margin-top: 0;
+  color: #dcdcdc;
+}

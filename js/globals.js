@@ -1,0 +1,1 @@
+const usersKey = "@easynvest/users";

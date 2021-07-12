@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/formControll.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Easynvest - teste frontend</title>
+  </head>
+  <body>
+    <form onSubmit="handleSubmit()">
+      <div class="formControll">
+        <input
+          type="text"
+          id="frmNameA"
+          name="name"
+          required
+          autocomplete="name"
+          placeholder="name@example.com"
+         
+        />
+        <label for="frmNameA" >
+          Nome completo (sem abreviações)
+        </label>
+        <span class="errorMessage" id="error-frmNameA">Campo deve conter 3 caracteres ou mais</span>        
+      </div>
+      <div class="formControll">
+        <input
+          type="email"
+          name="emailC"
+      
+          id="frmEmailC"
+          placeholder="name@example.com"
+          required
+          autocomplete="email"
+        />
+        <label for="frmEmailC" >E-mail</label>
+        <span class="errorMessage" id="error-frmEmailC">Email inválido</span>   
+      </div>
+       <div class="formControll">
+          <input 
+            type="text" 
+            name="cpf" 
+            id="cpf" 
+            placeholder="@"
+            required autocomplete="cpf"
+   
+                        maxlength="14"
+
+          >          
+          <label for="cpf">CPF</label>
+        <span class="errorMessage" id="error-cpf">CPF inválido</span>   
+      </div>
+      <div class="formControll">
+          <input 
+            type="tel" 
+            name="phone" 
+            id="frmPhoneNumA" 
+            placeholder="@" 
+            required 
+            autocomplete="tel"       
+            maxlength="15"
+          >          
+          <label for="frmPhoneNumA" >Telefone</label>
+        <span class="errorMessage" id="error-frmPhoneNumA">Telefone inválido</span>   
+      </div>
+
+    <script src="js/utils.js"></script>
+    <script src="js/globals.js"></script>
+    <script src="js/getInitialValue.js"></script>
+    <script src="js/masks.js"></script>
+    <script src="js/validations.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
